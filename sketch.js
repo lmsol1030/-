@@ -26,34 +26,14 @@
    var timing4 = (new Date()%duration4)/duration4; 
    
 
-
-  //지구라인 
-  noFill(); 
-   ellipse(500,500,600,600) 
- 
- 
-  //달타원라인1 
-  noFill(); 
-  stroke(255); 
-  ellipse(500 + Math.cos(timing1*2*PI)*300, 
-         500 + Math.sin(timing1*2*PI)*300, 
-         100, 
-         300); 
- 
- 
-  //달타원라인2 
-  noFill(); 
-  stroke(255); 
- ellipse(500 + Math.cos(timing1*2*PI)*300, 
-         500 + Math.sin(timing1*2*PI)*300, 
-         300, 
-         150); 
  
 
 
   //태양 
  image(solar,250,250,500,500);
 
+
+ 
 
 
 }
