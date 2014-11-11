@@ -16,30 +16,44 @@
   background(bg); 
 
 
-   var duration = 3000;
+   var duration = 5000;
    var timing = (new Date()%duration)/duration;
-   var duration2 = 5800;
+   var duration2 = 6000;
    var timing2 = (new Date()%duration2)/duration2;
+   var duration3 = 4000; 
+   var timing3 = (new Date()%duration3)/duration3; 
+   var duration4 = 3000; 
+   var timing4 = (new Date()%duration4)/duration4; 
+   
 
 
-   fill(0);
-    ellipse(250,250,250,250);
-
-
-   fill(196,158,0);
-   ellipse(250 + Math.cos(timing*2*PI)*200,           // x좌표
-        250 + Math.sin(timing*2*PI)*200,       // y좌표
-        50,                                     // width
-        50);                                    // height
-
-
-   fill(196,158,0);
-   ellipse(250 + Math.cos(timing2*2*PI)*100,           // x좌표
-        250 + Math.sin(timing2*2*PI)*200,       // y좌표
-        50,                                     // width
-        50);    
+  //지구라인 
+  noFill(); 
+   ellipse(500,500,600,600) 
+ 
+ 
+  //달타원라인1 
+  noFill(); 
+  stroke(255); 
+  ellipse(500 + Math.cos(timing1*2*PI)*300, 
+         500 + Math.sin(timing1*2*PI)*300, 
+         100, 
+         300); 
+ 
+ 
+  //달타원라인2 
+  noFill(); 
+  stroke(255); 
+ ellipse(500 + Math.cos(timing1*2*PI)*300, 
+         500 + Math.sin(timing1*2*PI)*300, 
+         300, 
+         150); 
+ 
 
 
   //태양 
-  image(solar,250,250,500,500);
+ image(solar,250,250,500,500);
+
+
+
 }
